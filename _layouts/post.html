@@ -12,3 +12,54 @@ layout: default
         {{ content }}
     </div>
 </div>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <style>
+        body {
+            background-image: url('/4173RN473R/images/background.png') !important;
+            background-repeat: no-repeat !important;
+            background-position: 50% 50% !important;
+            background-size: cover !important;
+            background-attachment: fixed !important;
+        }
+        
+        body, body * {
+            color: white !important;
+        }
+        
+        a {
+            color: #dddddd !important;
+        }
+        a:hover {
+            color: #ffffff !important;
+        }
+        
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+        
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="post-content">
+        {{ content }}
+    </div>
+</body>
+</html>
