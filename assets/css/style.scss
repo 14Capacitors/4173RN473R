@@ -10,3 +10,10 @@ body * {
 a {
   color: #ffffff !important;
 }
+
+body {
+  background-image: url('{{ site.baseurl }}/images/background.png');
+  background-size: cover;
+  background-position: center;  /* 这会导致图片靠上 */
+  background-repeat: no-repeat;
+}
