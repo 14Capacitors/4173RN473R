@@ -1,0 +1,13 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* 在这里添加你自己的样式 */
+
+/* 如果想要专门修改 posts 里的文章内容字体 */
+.post-content {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
