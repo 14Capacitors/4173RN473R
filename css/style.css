@@ -1,0 +1,11 @@
+/* 这里是给整个网页加背景图 */
+body {
+    /* 核心：用相对路径引用上一级文件夹中的图片 */
+    background-image: url('../images/background.png');
+    
+    /* 下面这些是让背景图更好看的常用设置 */
+    background-repeat: no-repeat;     /* 防止图片重复平铺 */
+    background-size: cover;           /* 让图片覆盖整个屏幕 */
+    background-position: center;      /* 让图片居中显示 */
+    background-attachment: fixed;     /* 让背景图固定，不滚动 */
+}
