@@ -1,3 +1,23 @@
+---
+layout: default
+---
+
+<div class="container" style="margin: 20px auto; max-width: 800px; padding: 0 20px;">
+    <h1>S0M37H1NG 1N73R3571NG……</h1>
+    <ul>
+        {% for post in site.posts %}
+        <li style="margin-bottom: 12px;">
+            <!-- 关键：这里使用了 post.url 作为链接 -->
+            <a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 1.1em;">
+                {{ post.title }}
+            </a>
+            <span style="color: #b5e853; margin-left: 12px;">
+                ({{ post.date | date: "%Y-%m-%d" }})
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
 
 <!DOCTYPE html>
@@ -6,7 +26,7 @@
     <meta charset="UTF-8">
     <title>4173RN473R</title>
     <style>
-        html, body {
+         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
@@ -45,7 +65,7 @@
             text-decoration: none !important;
         }
         
-        /* 半透明遮罩 */
+        /* 半透明遮罩（确保在所有页面都生效） */
         body::before,
         main::before,
         .wrapper::before {
@@ -70,22 +90,4 @@
         }
     </style>
 </head>
-<body>
-    <!-- 这里才是页面的实际内容 -->
-    <div class="container" style="margin: 20px auto; max-width: 800px; padding: 0 20px;">
-        <h1>S0M37H1NG 1N73R3571NG……</h1>
-        <ul>
-            {% for post in site.posts %}
-            <li style="margin-bottom: 12px;">
-                <a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 1.1em;">
-                    {{ post.title }}
-                </a>
-                <span style="color: #b5e853; margin-left: 12px;">
-                    ({{ post.date | date: "%Y-%m-%d" }})
-                </span>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</body>
-</html>
+</html>     正文是不是应该在里面
