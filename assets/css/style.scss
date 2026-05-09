@@ -1,13 +1,21 @@
 ---
 ---
+/* 1️⃣ 定义 SGA 字体 (Standard Galactic Alphabet) */
+@font-face {
+  font-family: 'SGA Pixel';
+  src: url('{{ site.baseurl }}/assets/fonts/sga-pixies.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
+/* 2️⃣ 导入你正在使用的 Hacker 主题的所有原始样式 (非常重要，不能删除) */
 @import "{{ site.theme }}";
 
-/* 在这里添加你自己的样式 */
-
-/* 如果想要专门修改 posts 里的文章内容字体 */
-.post-content {
-  font-family: 'Arial', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.6;
+/* 可选：也可以设置网站全局背景图 */
+body {
+  background-image: url('{{ site.baseurl }}/images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
