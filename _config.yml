@@ -12,3 +12,9 @@ show_downloads: false
 # 这个设置用于首页展示博客列表
 paginate: 5
 paginate_path: "/blog/page:num/"
+
+# 关键配置：设置网站根目录为 /4173RN473R/
+baseurl: "/4173RN473R"
+
+# 你的网站最终地址。建议加上，但 baseurl 是关键的
+url: "https://14capacitors.github.io"
