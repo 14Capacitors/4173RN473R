@@ -2,14 +2,19 @@
 layout: default
 ---
 
-<div class="container">
-  <h1>S0M37H1NG 1N73R3571NG……</h1>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        <span style="color: #b5e853;">({{ post.date | date: "%Y-%m-%d" }})</span>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="container" style="margin: 20px auto; max-width: 800px; padding: 0 20px;">
+    <h1>S0M37H1NG 1N73R3571NG……</h1>
+    <ul>
+        {% for post in site.posts %}
+        <li style="margin-bottom: 12px;">
+            <!-- 关键：这里使用了 post.url 作为链接 -->
+            <a href="{{ post.url }}" style="font-size: 1.1em;">
+                {{ post.title }}
+            </a>
+            <span style="color: #b5e853; margin-left: 12px;">
+                ({{ post.date | date: "%Y-%m-%d" }})
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
