@@ -7,4 +7,4 @@ description: 4173RN473R IS WATCHING YOU =D
 
 # 是否显示 "Download .zip" 和 "Download .tar.gz" 的下载按钮
 # 可选值为 true 或 false
-show_downloads: true
+show_downloads: false
