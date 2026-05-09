@@ -1,0 +1,21 @@
+---
+layout: post
+title: "一切奇迹の起点"
+date: 2026-05-09
+---
+
+<style>
+  /* 直接在文章页面定义SGA字体 */
+  @font-face {
+    font-family: 'SGA';
+    src: url('{{ site.baseurl }}/assets/fonts/SGA.ttf') format('truetype');
+  }
+  
+  /* 应用到整个页面 */
+  body, body * {
+    font-family: 'SGA', monospace !important;
+  }
+</style>
+# H3110 W0R1D
+# 4173RN473R 1S C0M1NG 
+# 0N1Y 7H3 11M17
