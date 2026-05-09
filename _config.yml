@@ -1,0 +1,10 @@
+theme: jekyll-theme-hacker
+# 网站标题 (会显示在页面顶端)
+title: ONLY THE LIMIT
+
+# 网站描述 (会显示在标题下方)
+description: 4173RN473R IS WATCHING YOU =D
+
+# 是否显示 "Download .zip" 和 "Download .tar.gz" 的下载按钮
+# 可选值为 true 或 false
+show_downloads: true
