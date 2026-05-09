@@ -20,3 +20,65 @@ layout: default
 </div>
 
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>4173RN473R</title>
+    <style>
+        /* 全局样式：背景图片 + 白色文字 */
+        body {
+            /* 背景图片设置 - 注意路径中的 /4173RN473R/ 是你的仓库名 */
+            background-image: url('/4173RN473R/images/background.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            
+            /* 白色文字设置 */
+            color: white !important;
+            
+            /* 文字阴影，让白色字在亮背景上也清晰 */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            
+            /* 确保页面占满全屏 */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        
+        /* 让所有文字都是白色 */
+        body, body * {
+            color: white !important;
+        }
+        
+        /* 链接颜色稍微柔和一点 */
+        a {
+            color: #dddddd !important;
+        }
+        a:hover {
+            color: #ffffff !important;
+            text-decoration: underline;
+        }
+        
+        /* 半透明黑色遮罩，让背景更暗、文字更突出 */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+        
+        /* 可选：让主要内容区域有适当的内边距 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+    </style>
+</head>
+</html>
