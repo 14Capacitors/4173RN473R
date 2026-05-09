@@ -1,10 +1,12 @@
 ---
 ---
 
-/* 可选：也可以设置网站全局背景图 */
-body {
-  background-image: url('{{ site.baseurl }}/images/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+body, 
+body * {
+  color: white !important;
+}
+
+/* 确保链接也是白色（可选） */
+a {
+  color: #ffffff !important;
 }
