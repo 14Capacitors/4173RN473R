@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}4173RN473R</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* 背景图片 */
+        body {
+            background-image: url('/4173RN473R/images/background.png') !important;
+            background-repeat: no-repeat !important;
+            background-position: 50% 50% !important;
+            background-size: cover !important;
+            background-attachment: fixed !important;
+        }
+        
+        /* 白色文字 */
+        body, body * {
+            color: white !important;
+        }
+        
+        /* 链接 - 无下划线 */
+        a, a * {
+            color: #dddddd !important;
+            text-decoration: none !important;
+        }
+        a:hover, a:hover * {
+            color: #ffffff !important;
+            text-decoration: none !important;
+        }
+        
+        /* 半透明遮罩 */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+            pointer-events: none;
+        }
+        
+        /* 内容容器 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {{ content }}
+    </div>
+</body>
+</html>
