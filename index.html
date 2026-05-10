@@ -8,7 +8,7 @@ layout: default
     <span style="font-size: 0.7em;">韡人创建</span>
     </h1>
     <ul>
-        {% for post in site.posts %}
+        {% for post in site.posts reversed %}
         <li style="margin-bottom: 12px;">
             <!-- 关键：这里使用了 post.url 作为链接 -->
             <a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 1.1em;">
