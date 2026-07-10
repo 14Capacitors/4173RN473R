@@ -7,10 +7,10 @@ layout: default
     4173RN473R 1S W47CH1NG U……<br>
     <span style="font-size: 0.7em;">韡人创建</span>
     </h1>
+    <a href="/tools/time.html"> 工具 </a>
     <ul>
         {% for post in site.posts reversed %}
         <li style="margin-bottom: 12px;">
-            <!-- 关键：这里使用了 post.url 作为链接 -->
             <a href="{{ site.baseurl }}{{ post.url }}" style="font-size: 1.1em;">
                 {{ post.title }}
             </a>
