@@ -1,9 +1,9 @@
-＜!DOCTYPE html＞
-＜html＞
-＜head＞
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-＜title＞Digital Clock＜/title＞
-＜script＞
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Digital Clock</title>
+<script>
   function displayTime()
   {
   var elt=document.getElementById("clock");
@@ -12,8 +12,8 @@
   setTimeout(displayTime,1000);
   }
   window.onload=displayTime;
-＜/script＞
-＜style＞
+</script>
+<style>
   #clock
   {
   font:bold 24pt sans;
@@ -22,9 +22,9 @@
   border:solid black 2px;
   border-radius:10px;
   }
-＜/style＞
-＜/head＞
-＜body＞
-  ＜h1＞Digital Clock＜/h1＞
-  ＜span id="clock"＞＜/span＞
-＜/body＞
+</style>
+</head>
+<body>
+  <h1>Digital Clock</h1>
+  <span id="clock"></span>
+</body>
